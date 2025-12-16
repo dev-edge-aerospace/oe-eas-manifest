@@ -10,3 +10,10 @@ Manifests for the repo tool to manage the different repositories and versions us
 
 
 Todo: Move the edge repositories from the employee account to the company dev account.
+
+clone using:
+
+```
+repo init -u git@github.com:dev-edge-aerospace/oe-eas-manifest.git -b main -m oe-eas/default.xml
+repo sync
+```
