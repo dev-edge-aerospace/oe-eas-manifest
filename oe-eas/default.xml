@@ -25,8 +25,8 @@ Root of configuration for the openEmbedded Edge Aerospace linux image
   <project name="toradex/meta-toradex-econ.git" path="layers/meta-toradex-econ/" remote="edge" revision="kirkstone-6.x.y"/>
 
   <!-- repositories are under LuanCardoso-EdgeAerospace while in early development; Ownership will change in the future -->
-  <project name="LuanCardoso-EdgeAerospace/meta-eas.git" path="layers/meta-eas/" remote="edge" revision="master"/>
-  <project name="LuanCardoso-EdgeAerospace/meta-eas-distro.git" path="layers/meta-eas-distro" remote="edge" revision="master">
+  <project name="dev-edge-aerospace/meta-eas.git" path="layers/meta-eas/" remote="edge" revision="master"/>
+  <project name="dev-edge-aerospace/meta-eas-distro.git" path="layers/meta-eas-distro" remote="edge" revision="master">
     <copyfile dest="export" src="buildconf/export"/>
   </project>  
 </manifest>
