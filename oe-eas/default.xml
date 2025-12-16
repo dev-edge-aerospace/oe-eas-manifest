@@ -23,9 +23,7 @@ Root of configuration for the openEmbedded Edge Aerospace linux image
 
   <!-- Camera support for the ar0521. This camera is not supported by Toradex anymore, so it might be removed soon -->
   <project name="toradex/meta-toradex-econ.git" path="layers/meta-toradex-econ/" remote="edge" revision="kirkstone-6.x.y"/>
-
-  <!-- repositories are under LuanCardoso-EdgeAerospace while in early development; Ownership will change in the future -->
-  <project name="dev-edge-aerospace/meta-eas.git" path="layers/meta-eas/" remote="edge" revision="master"/>
+  
   <project name="dev-edge-aerospace/meta-eas-distro.git" path="layers/meta-eas-distro" remote="edge" revision="master">
     <copyfile dest="export" src="buildconf/export"/>
   </project>  
