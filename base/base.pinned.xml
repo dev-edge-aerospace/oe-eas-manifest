@@ -6,6 +6,20 @@ Base repositoties for yocto, core, bitbake
   <remote alias="repo" fetch="https://github.com/openembedded" name="oe"/>
   <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto"/>
 
+  <!-- Alisases for Multimedia desktop packages -->
+  <remote alias="repo" fetch="https://github.com/OSSystems" name="gith"/>
+  <remote alias="repo" fetch="https://github.com/nxp-imx" name="gitimx"/>
+  <remote alias="repo" fetch="https://github.com/kraj" name="gitclang"/>
+  <remote alias="repo" fetch="https://git.yoctoproject.org/" name="gitlts"/>
+  <remote alias="repo" fetch="https://github.com/Igalia/" name="gitwpe"/>
+  <remote alias="repo" fetch="https://github.com/foundriesio/" name="gitvscode"/>
+  <!-- From -->
+  <!-- https://web.archive.org/web/20240807070119/https://developer.toradex.com/linux-bsp/application-development/gui/how-to-use-web-browser-linux/ --> -->
+  <project name="meta-browser" path="layers/meta-browser" remote="gith" revision="e232c2e21b96dc092d9af8bea4b3a528e7a46dd6"/>
+  <project name="meta-imx" path="layers/meta-imx" remote="gitimx" revision="langdale-6.1.1-1.0.0"/>
+  <project name="meta-vscode" path="layers/meta-vscode" remote="gitvscode" revision="kirkstone"/>
+  <project name="meta-clang" path="layers/meta-openembedded/meta-clang" remote="gitclang" revision="kirkstone"/>
+
   <default sync-j="4"/>
 
   <project name="bitbake.git" path="layers/openembedded-core/bitbake" remote="oe" revision="046871d9fd76efdca7b72718b328d8f545523f7e" upstream="2.0"/>
